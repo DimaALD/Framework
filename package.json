@@ -9,10 +9,10 @@
   "scripts": {
     "postinstall": "webdriver-manager update --gecko=false",
     "preinstall": "mkdir reports && mkdir logs",
-    "e2e": "protractor ./test/SanDisk/config/config.js",
+    "e2e": "protractor ./test/e2e/config/config.js",
     "e2e:update": "node ./node_modules/protractor/bin/webdriver-manager update --gecko=false",
     "e2e:start-server": "start cmd /k \"node_modules\\.bin\\webdriver-manager start\"",
-    "e2e:generate-report": "node ./test/SanDisk/config/reporter.js"
+    "e2e:generate-report": "node ./test/e2e/config/reporter.js"
   },
   "dependencies": {
     "chai": "^4.1.2",

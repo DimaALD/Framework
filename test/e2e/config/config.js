@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const path = require(`path`);
 const yargs = require(`yargs`);
-const logger = require(path.resolve(`./test/SanDisk/config/loggerConfig.js`)).logger;
+const logger = require(path.resolve(`./test/e2e/config/loggerConfig.js`)).logger;
 
 exports.config = {
   allScriptsTimeout: 20000,
@@ -16,7 +16,7 @@ exports.config = {
   },
   disableChecks: true,
   cucumberOpts: {
-    require: [path.resolve(`./test/e2e/steps/**/*.js`)],
+    require: [path.resolve(`./test/e2e/steps/*.js`)],
     ignoreUncaughtExceptions: true,
     format: `json:./reports/report.json`,
     tags: yargs.tag || `@sandisk`

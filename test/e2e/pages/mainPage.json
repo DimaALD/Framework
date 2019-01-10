@@ -1,0 +1,7 @@
+{
+    "Menu":{
+        "type":"css",
+        "selector":".nav.navbar-nav",
+        "items": "li"
+    }
+}
