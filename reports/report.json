@@ -35,24 +35,37 @@
             "line": 6,
             "name": "I open \"https://www.sandisk.com/\" url",
             "match": {
-              "location": "test\\e2e\\steps\\browserInteractions.js:7"
+              "location": "test\\e2e\\steps\\browserInteractions.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 4387000000
+              "duration": 4121000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I click \"SSD\" in \"Menu\"",
+            "name": "I click \"SHOP NOW\" in \"Menu\"",
             "match": {
               "location": "test\\e2e\\steps\\actionSteps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 4008000000
+              "duration": 1291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I switch to \"next\" tab",
+            "match": {
+              "location": "test\\e2e\\steps\\browserInteractions.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1052000000
             }
           },
           {
@@ -62,8 +75,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]

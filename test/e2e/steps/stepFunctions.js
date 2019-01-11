@@ -18,18 +18,17 @@ const getWebElementByText = async (alias, text) => {
 let itemsLocator = (await pageSelector.getCurrentPage())[alias].items
 let webElement = await getWebElement(alias)
 let array = await webElement.$$(itemsLocator);
-logger.debug(array.length)
 for(let i = 0; i < array.length;i++){
     if(await array[i].getText() === text){
         return array[i]
     }
 }
-throw new Error(`Elemrnt with text ${text} wasn't found`)
+throw new Error(`Element with text ${text} wasn't found`)
 }
 
 const getTab = async (tab) => {
-    let currentTab = browser.getWindowHandle();
-    let allTabs = browser.getAllWindowHandles();
+    let currentTab = await browser.getWindowHandle();
+    let allTabs = await browser.getAllWindowHandles();
     let currentTabIndex = allTabs.indexOf(currentTab);
     switch(tab){
         case "next" : {
