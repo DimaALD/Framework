@@ -1,16 +1,17 @@
-let obj = {
-    x : 10,
-    getX : () => {
-        this.x = 49;
-        return this.x;
+let f1 = (tab)=>{
+    let result;
+    switch(tab){
+        case "next":{
+            result = "NEXT TAB"
+            break;
+        }
+        case "previos":{
+            result = "PREVIOS TAB"
+            break;
+        }
     }
+    return result
 }
 
-var x = 540;
-
-let fun = function (a, b , c) {
-    return a + b + c + this.x;
-}
-let sum = fun.bind(obj)
-
-console.log(sum(12,2,3))
+let f2 = f1.bind(null,"previos")
+console.log(f2())

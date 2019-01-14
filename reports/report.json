@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4121000000
+              "duration": 3948000000
             }
           },
           {
@@ -52,20 +52,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1291000000
+              "duration": 4049000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
+            "name": "I wait until \"next\" tab appears",
+            "match": {
+              "location": "test\\e2e\\steps\\waiters.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
             "name": "I switch to \"next\" tab",
             "match": {
               "location": "test\\e2e\\steps\\browserInteractions.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1052000000
+              "duration": 1050000000
             }
           },
           {
