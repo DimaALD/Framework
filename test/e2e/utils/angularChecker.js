@@ -1,11 +1,11 @@
-let isAngular = async () => {
-    let isAngular = browser.executeScript("return window.angular");
-    if(isAngular){
+let isAngularPresent = async () => {
+    let isAngularPresent = browser.executeScript("return window.angular");
+    if(isAngularPresent){
         return true;
     }else{
         return false;
     }
 }
 module.exports = {
-    isAngular
+    isAngularPresent
 }

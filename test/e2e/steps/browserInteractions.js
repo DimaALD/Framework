@@ -4,7 +4,7 @@ let { Then, When, Given ,setDefaultTimeout} = require(`cucumber`);
 const path = require(`path`);
 const logger = require(path.resolve(`./test/e2e/config/loggerConfig.js`)).logger;
 const stepFunctions = require(path.resolve(`./test/e2e/steps/stepFunctions.js`));
-const isAngular = require(path.resolve(`./test/e2e/utils/angularChecker.js`)).isAngular;
+const isAngular = require(path.resolve(`./test/e2e/utils/angularChecker.js`)).isAngularPresent;
 setDefaultTimeout(60 * 1000);
 
 When(/^I open "([^"]*)" url$/, (url) => {

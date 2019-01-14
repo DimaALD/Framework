@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3948000000
+              "duration": 4139000000
             }
           },
           {
@@ -48,11 +48,11 @@
             "line": 7,
             "name": "I click \"SHOP NOW\" in \"Menu\"",
             "match": {
-              "location": "test\\e2e\\steps\\actionSteps.js:7"
+              "location": "test\\e2e\\steps\\actionSteps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 4049000000
+              "duration": 1314000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 15000000
             }
           },
           {
@@ -78,7 +78,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1050000000
+              "duration": 1555000000
             }
           },
           {
@@ -88,7 +88,8 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 2000000
             }
           }
         ]

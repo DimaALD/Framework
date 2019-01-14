@@ -9,6 +9,7 @@
   "scripts": {
     "postinstall": "webdriver-manager update --gecko=false",
     "preinstall": "mkdir reports && mkdir logs",
+    "pree2e":"node ./test/e2e/utils/folderCleaner.js",
     "e2e": "protractor ./test/e2e/config/config.js",
     "e2e:update": "node ./node_modules/protractor/bin/webdriver-manager update --gecko=false",
     "e2e:start-server": "start cmd /k \"node_modules\\.bin\\webdriver-manager start\"",

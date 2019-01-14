@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const path = require(`path`);
-const yargs = require(`yargs`);
+const yargs = require(`yargs`).argv;
 const logger = require(path.resolve(`./test/e2e/config/loggerConfig.js`)).logger;
 
 exports.config = {

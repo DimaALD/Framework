@@ -1,0 +1,99 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Menu",
+    "line": 2,
+    "id": "menu",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "test\\e2e\\features\\waiter2.feature",
+    "elements": [
+      {
+        "id": "menu;verify-user-can-open-menu",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify user can open menu",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@sandisk",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open \"https://www.sandisk.com/\" url",
+            "match": {
+              "location": "test\\e2e\\steps\\browserInteractions.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click \"SHOP NOW\" in \"Menu\"",
+            "match": {
+              "location": "test\\e2e\\steps\\actionSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1339000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I wait until \"next\" tab appears",
+            "match": {
+              "location": "test\\e2e\\steps\\waiters.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I switch to \"next\" tab",
+            "match": {
+              "location": "test\\e2e\\steps\\browserInteractions.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1488000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
